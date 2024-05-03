@@ -1,0 +1,43 @@
+/* Ajustes para los elementos de etiqueta (label) */
+label {
+    color: black; 
+    font-weight: bold; 
+  }
+  
+  /* Ajustes para los elementos de entrada (input) */
+  input {
+    font-size: 1em;
+    padding: .5rem;
+  }
+  
+  /* Ajustes para los botones */
+  button {
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  /* Estilos al pasar el cursor sobre el botón */
+  button:hover {
+    background-color: #cfd8dc; 
+  }
+  
+  /* Estilos para botones deshabilitados */
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+  
+  /* Ajustes para las imágenes */
+  img {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4%;
+  }
+  

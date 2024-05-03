@@ -1,0 +1,60 @@
+<!--Actualizamos los enlaces de plantillas para anunciar el nombre del héroe y muestra tanto el id como el nombre o name-->
+
+<!--<h2>Detalle: {{hero.name | uppercase}}</h2>
+<div><span>Id: </span>{{hero.id}}</div>
+<div>
+  <label>Nombre:
+    <input [(ngModel)]="hero.name" placeholder="Nombre"/>
+  </label>
+</div>-->
+
+<!--<h2>Mis Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes"
+    [class.selected]="hero === selectedHero"
+    (click)="onSelect(hero)">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+
+<div *ngIf="selectedHero">
+
+  <h2>Detalles {{selectedHero.name | uppercase}}</h2>
+  <div><span>Id: </span>{{selectedHero.id}}</div>
+  <div>
+    <label>Nombre:
+      <input [(ngModel)]="selectedHero.name" placeholder="Nombre"/>
+    </label>
+  </div>
+
+</div>-->
+
+<!--Actualizamos y los cambios agregados son los botones-->
+
+<!--<h2>Mis Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">
+      <span class="badge">{{hero.id}}</span>
+      <span class="name">{{hero.name}}</span>
+    </button>
+  </li>
+</ul>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>-->
+
+<!-- Encabezado de la colección -->
+<h2>Colección</h2>
+
+<!-- Lista de héroes -->
+<ul class="heroes">
+  <!-- Directiva *ngFor para iterar sobre la lista de héroes y generar elementos <li> -->
+  <li *ngFor="let hero of heroes">
+    <!-- Enlace al detalle del héroe, que redirecciona a la página de detalle del héroe correspondiente -->
+    <a routerLink="/detail/{{hero.id}}">
+      <!-- Etiqueta de distintivo que muestra el ID del héroe -->
+      <span class="badge">{{hero.id}}</span>
+      <!-- Nombre del héroe -->
+      {{hero.name}}
+    </a>
+  </li>
+</ul>
